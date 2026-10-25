@@ -12,7 +12,7 @@ Le jeu fonctionne sans serveur applicatif, compte joueur ni base de données dis
 
 Le workflow `.github/workflows/pages.yml` lance les tests, construit le site et le publie après chaque push sur `main`. Dans Settings → Pages, la source doit être **GitHub Actions**. Le déploiement utilise uniquement les permissions de publication Pages et de lecture du contenu du dépôt.
 
-Le nom proposé pour le dépôt est `la-couronne-des-jours-morts`, sur le compte GitHub connecté. L’URL définitive sera enregistrée après la première publication réussie.
+Publication vérifiée : https://shengael.github.io/la-couronne-des-jours-morts/ — dépôt : https://github.com/Shengael/la-couronne-des-jours-morts. Les 17 ressources du navigateur ont été comparées au contenu Git et le déploiement GitHub Actions a réussi.
 
 ## Sauvegardes et retours
 

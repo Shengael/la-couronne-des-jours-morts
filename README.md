@@ -4,6 +4,8 @@ Jeu navigateur incrémental, en français, pour ordinateur et smartphone en port
 
 ## Jouer
 
+**[Ouvrir le jeu en ligne](https://shengael.github.io/la-couronne-des-jours-morts/)** — ordinateur et smartphone. Pour reprendre une partie locale, exporter sur localhost puis importer sur le site hébergé.
+
 Depuis ce dossier : `npm start`, puis ouvrir http://127.0.0.1:8081/ dans un navigateur. Si le serveur tourne déjà, rafraîchir simplement la page. Le jeu utilise des modules JavaScript : ouvrir le fichier HTML directement ne suffit pas.
 
 La sauvegarde reste locale à ce navigateur, sous `couronne.frontier.v2`. Export et import sont dans la barre latérale. Une ancienne partie est migrée en conservant ses stocks et ses régiments ; sa première migration crée une copie locale `couronne.frontier.v2.pre-campaign-v04`. L’import et la remise à zéro conservent également une copie de secours. Un fichier importé ne reçoit jamais arbitrairement des gains d’absence.
