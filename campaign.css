@@ -1,0 +1,38 @@
+/* Shared controls stay usable without hover on a portrait phone. */
+.saga-panel{border-color:#d7b87466;background:linear-gradient(145deg,#25362e,#141f22)}
+.saga-panel h3{color:var(--gold)}
+.saga-panel p{line-height:1.85;max-width:76ch}
+.saga-chapter{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.saga-story{font-size:17px;line-height:1.85;max-width:76ch}
+.saga-story p{margin:16px 0}
+.saga-options{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.saga-options button{white-space:normal;text-align:left}
+.saga-memory{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:18px 0}
+.saga-memory>div{padding:12px;border:1px solid var(--edge);border-radius:5px;font:12px/1.7 system-ui}
+.legion-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.legion-grid .choice{margin-top:12px}
+.legion-grid .task-quote{margin-bottom:12px}
+.legion-grid .project{padding-bottom:14px}
+.legion-grid h4{margin:14px 0 8px;font-weight:normal}
+.world-status{font:12px/1.7 system-ui;color:var(--muted)}
+.filter-row{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:12px 0}
+.filter-row select{min-height:42px}
+.resource-calculation{padding:10px;background:#111b1d;border-left:2px solid var(--gold)}
+.milestone-notice{border-left:3px solid var(--gold);padding:10px 16px;margin:20px 0}
+input:focus-visible,summary:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+summary{cursor:pointer}
+.skip-link{position:fixed;top:-80px;left:10px;z-index:300;padding:12px;background:var(--gold);color:#111}
+.skip-link:focus{top:10px}
+@media(max-width:760px){
+ button.small,button.quiet,.order button{min-height:44px;min-width:44px}
+ .allocation-controls{flex-wrap:wrap}
+ .legion-grid{grid-template-columns:minmax(0,1fr)}
+ .saga-memory{grid-template-columns:minmax(0,1fr)}
+ .saga-story{font-size:16px}
+ summary{padding-top:12px!important;padding-bottom:12px!important;min-height:44px!important}
+ input[type=number],select{min-height:44px}
+ .choice label{min-height:44px;gap:12px}
+ .topbar{flex-wrap:wrap}.stock{flex-wrap:wrap}
+ .pill{white-space:normal}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

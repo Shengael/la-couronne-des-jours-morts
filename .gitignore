@@ -1,0 +1,9 @@
+*.log
+tests/*.png
+tests/reports/
+_site/
+node_modules/
+.env
+.env.*
+*.sav
+couronne-frontiere*.json
